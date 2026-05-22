@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitta Slim | Estética Avançada e Redução de Medidas</title>
+    <meta name="description" content="Reduza medidas logo na primeira sessão com tecnologia avançada e sem cirurgia. Agende sua avaliação.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            900: '#881337',
+                            950: '#4c051e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-zinc-950 text-slate-300 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-zinc-950/80 backdrop-blur-md border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="ph-fill ph-sparkles text-brand-500 text-3xl"></i>
+                    <span class="text-white font-bold text-xl tracking-tight">Vitta Slim</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#metodo" class="text-sm font-medium hover:text-white transition-colors">O Método</a>
+                    <a href="#resultados" class="text-sm font-medium hover:text-white transition-colors">Resultados</a>
+                    <a href="#protocolos" class="text-sm font-medium hover:text-white transition-colors">Protocolos</a>
+                    <a href="#contato" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-[0_0_15px_rgba(219,39,119,0.4)] hover:shadow-[0_0_25px_rgba(219,39,119,0.6)]">Agendar Avaliação</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-600/10 rounded-full blur-[120px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-sm font-semibold mb-8">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                </span>
+                Exclusivo para Maringá e Região
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Reduza até 4cm de medidas <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-rose-400">logo na primeira sessão.</span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl text-lg md:text-xl mx-auto mb-10 text-slate-400">
+                Conheça o Express Slim: o único tratamento não invasivo que combina tecnologia de ponta e ativos biológicos para eliminar a gordura localizada de forma rápida, segura e indolor.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contato" class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:-translate-y-1">
+                    Quero Eliminar Gordura Localizada
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#resultados" class="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur-sm">
+                    Ver Resultados Reais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain / Solution Section (O Custo de Adiar) -->
+    <section id="metodo" class="py-24 bg-brand-950/20 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">O Custo de Adiar sua Autoestima</h2>
+                <p class="text-lg text-slate-400">Dietas restritivas e horas de cardio nem sempre resolvem aquela gordura localizada que insiste em ficar. Nosso método atua direto na raiz do problema, sem agulhas e sem sofrimento.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-500/50 transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-brand-500/20 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-activity text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Resultados Visíveis</h3>
+                    <p class="text-slate-400">Mudanças reais medidas na fita métrica a partir da primeira aplicação do protocolo.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-500/50 transition-colors" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-brand-500/20 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-shield-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tecnologia Alemã</h3>
+                    <p class="text-slate-400">Equipamentos regulamentados de última geração que quebram as células de gordura com segurança.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-brand-500/50 transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-brand-500/20 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-clock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Zero Repouso</h3>
+                    <p class="text-slate-400">Volte à sua rotina normal imediatamente após a sessão. Sem marcas roxas ou dores intensas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Portfolio) -->
+    <section id="resultados" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16" data-aos="fade-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Casos de Sucesso</h2>
+                    <p class="text-lg text-slate-400">Mudanças reais de pacientes que recuperaram a confiança e transformaram suas curvas com o Express Slim.</p>
+                </div>
+                <a href="#contato" class="mt-6 md:mt-0 text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-2 group">
+                    Quero o meu resultado <i class="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="aspect-video bg-zinc-800 relative">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Redução Abdominal" class="object-cover w-full h-full opacity-60 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-90"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="text-brand-400 text-sm font-bold tracking-wider uppercase mb-2 block">Protocolo Abdominal</span>
+                        <h3 class="text-2xl font-bold text-white">-6cm de Cintura em 3 Sessões</h3>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="group relative rounded-2xl overflow-hidden cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="aspect-video bg-zinc-800 relative">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Modelagem de Flancos" class="object-cover w-full h-full opacity-60 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-90"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="text-brand-400 text-sm font-bold tracking-wider uppercase mb-2 block">Flancos e Culote</span>
+                        <h3 class="text-2xl font-bold text-white">Eliminação de Gordura Refratária</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Investment Section -->
+    <section id="protocolos" class="py-24 bg-brand-950/20 border-y border-white/5 relative">
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-brand-600/10 rounded-full blur-[100px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Invista na sua melhor versão</h2>
+                <p class="text-lg text-slate-400">Valores claros e pacotes estruturados para atender ao seu objetivo de queima de gordura.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Plan 1 -->
+                <div class="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 relative" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-white mb-2">Sessão Avulsa</h3>
+                    <p class="text-slate-400 mb-6">Ideal para conhecer o método e testar a tecnologia.</p>
+                    <div class="mb-8">
+                        <span class="text-sm text-slate-400">Por apenas</span>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-2xl font-bold text-white">R$</span>
+                            <span class="text-5xl font-extrabold text-white">297</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-green-400"></i> Avaliação de Bioimpedância</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-green-400"></i> 1 Área de Aplicação</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-green-400"></i> Ativos Lipolíticos Inclusos</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-green-400"></i> Medição Antes/Depois</li>
+                    </ul>
+                    <a href="#contato" class="block w-full text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-xl font-bold transition-colors">Agendar Sessão Inicial</a>
+                </div>
+                
+                <!-- Plan 2 -->
+                <div class="bg-gradient-to-b from-brand-600 to-brand-900 rounded-3xl p-8 border border-brand-500 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(219,39,119,0.3)]" data-aos="fade-left">
+                    <div class="absolute top-0 right-8 transform -translate-y-1/2">
+                        <span class="bg-gradient-to-r from-rose-400 to-brand-400 text-zinc-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Mais Recomendado</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Passaporte Express (5 Sessões)</h3>
+                    <p class="text-white/80 mb-6">Tratamento intensivo para remodelação corporal completa.</p>
+                    <div class="mb-8">
+                        <span class="text-sm text-white/80">Condição Especial</span>
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-3xl font-bold text-white">Sob Consulta</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-rose-300"></i> Acompanhamento Estético Completo</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-rose-300"></i> Foco em Até 3 Áreas Distintas</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-rose-300"></i> Plano de Manutenção Pós-Protocolo</li>
+                        <li class="flex items-center gap-3"><i class="ph-bold ph-check text-rose-300"></i> Suporte para Dúvidas via WhatsApp</li>
+                    </ul>
+                    <a href="#contato" class="block w-full text-center bg-white text-brand-950 hover:bg-slate-100 py-3 rounded-xl font-bold transition-colors">Garantir Vaga no Protocolo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Final CTA -->
+    <footer class="pt-20 pb-10 border-t border-white/10 text-center" id="contato">
+        <div class="max-w-3xl mx-auto px-4" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold text-white mb-6">Pronta para conquistar o corpo que você merece?</h2>
+            <p class="text-slate-400 mb-8">Clique abaixo para falar direto com nossa equipe no WhatsApp, tirar suas dúvidas e garantir o seu horário de avaliação exclusivo.</p>
+            
+            <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20protocolo%20Express%20Slim." target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-8 py-4 rounded-full text-xl font-bold transition-all shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-white">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                </svg>
+                Agendar Pelo WhatsApp
+            </a>
+        </div>
+        <div class="mt-20 text-slate-500 text-sm">
+            <p>&copy; 2026 Vitta Slim. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20protocolos%20de%20est%C3%A9tica." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform hover:bg-green-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-current text-white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreEngine | Infraestrutura de Alta Performance</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#050505',      /* Preto profundo */
+                            card: '#0d0d0e',    /* Cinza de bloco */
+                            green: '#22c55e',   /* Verde terminal */
+                            amber: '#f59e0b',   /* Alerta laranja */
+                            border: '#1f1f23'   /* Linha divisória */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-cyber-bg text-zinc-400 font-mono antialiased p-4 sm:p-8">
+
+    <!-- Wrapper Principal Estruturado -->
+    <div class="max-w-5xl mx-auto border border-cyber-border bg-black rounded-2xl overflow-hidden shadow-[0_0_80px_rgba(34,197,94,0.03)]">
+        
+        <!-- Header Estilo Janela de Código -->
+        <header class="flex justify-between items-center bg-cyber-card px-6 py-4 border-b border-cyber-border">
+            <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/40 block"></span>
+                <span class="w-3 h-3 rounded-full bg-cyber-amber/40 block"></span>
+                <span class="w-3 h-3 rounded-full bg-cyber-green/40 block"></span>
+                <span class="text-xs text-zinc-600 font-bold ml-2">core_engine_v2.1.sh</span>
+            </div>
+            <div class="text-[11px] text-cyber-green bg-cyber-green/10 border border-cyber-green/20 px-2 py-0.5 rounded">
+                ● LIVE_SERVER
+            </div>
+        </header>
+
+        <!-- Seção Hero: Terminal de Comando Funcional Interativo -->
+        <section class="p-6 sm:p-12 border-b border-cyber-border bg-gradient-to-b from-black to-cyber-card/30">
+            <div class="max-w-3xl mb-10">
+                <span class="text-cyber-green text-xs font-bold uppercase tracking-widest block mb-3">// SISTEMAS AUTÔNOMOS RESTRITOS</span>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight uppercase">
+                    Automação bruta de processos industriais e de software.
+                </h1>
+            </div>
+
+            <!-- TERMINAL ITERATIVO DE INTERAÇÃO -->
+            <div class="bg-black border border-cyber-border rounded-xl p-5 shadow-2xl relative">
+                <div class="text-xs text-zinc-500 mb-4 border-b border-cyber-border/50 pb-2 flex justify-between">
+                    <span>Interactive Console Shell</span>
+                    <span>Digite 'ajuda' ou clique nos comandos rápidos</span>
+                </div>
+                
+                <!-- Histórico do Terminal -->
+                <div id="terminal-history" class="space-y-2 text-xs sm:text-sm min-h-[140px] max-h-[220px] overflow-y-auto pr-2">
+                    <div class="text-zinc-600">CoreEngine Core initialized. Welcome administrator.</div>
+                    <div class="text-cyber-green">❖ Pronto para execução. Escolha uma diretriz operacional.</div>
+                </div>
+
+                <!-- Input de Comando -->
+                <form onsubmit="handleCommand(event)" class="mt-4 flex items-center border-t border-cyber-border/50 pt-3 gap-2">
+                    <span class="text-cyber-green font-bold text-sm">guest@core:~#</span>
+                    <input type="text" id="terminal-input" autocomplete="off" placeholder="Digite um comando..." class="bg-transparent flex-1 text-white font-mono text-sm focus:outline-none placeholder-zinc-700">
+                </form>
+            </div>
+
+            <!-- Atalhos de Comandos Rápidos Embaixo do Terminal -->
+            <div class="flex flex-wrap gap-2 mt-4 text-[11px]">
+                <span class="text-zinc-600 py-1">Sugestões rápidas:</span>
+                <button onclick="runSuggested('automacao')" class="bg-cyber-card hover:bg-zinc-900 border border-cyber-border text-zinc-400 hover:text-white px-2.5 py-1 rounded transition-colors">--ver-automacoes</button>
+                <button onclick="runSuggested('performance')" class="bg-cyber-card hover:bg-zinc-900 border border-cyber-border text-zinc-400 hover:text-white px-2.5 py-1 rounded transition-colors">--otimizar-infra</button>
+                <button onclick="runSuggested('seguranca')" class="bg-cyber-card hover:bg-zinc-900 border border-cyber-border text-zinc-400 hover:text-white px-2.5 py-1 rounded transition-colors">--auditar-logs</button>
+            </div>
+        </section>
+
+        <!-- Grid de Soluções Estilo Documentação Técnica (API Reference Look) -->
+        <section class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-cyber-border bg-black">
+            
+            <!-- Card Técnica 1 -->
+            <div class="p-8 space-y-4 hover:bg-cyber-card/20 transition-colors">
+                <div class="text-cyber-green text-sm font-bold flex items-center gap-2">
+                    <i class="ph ph-cpu"></i> 01 // SCRIPTS ENGINE
+                </div>
+                <h4 class="text-base font-bold text-white uppercase">Pipeline CI/CD Robusto</h4>
+                <p class="text-xs text-zinc-500 leading-relaxed">
+                    Scripts customizados de automação que unificam deploys, testes unitários automatizados e tratamentos de dados de forma assíncrona.
+                </p>
+            </div>
+
+            <!-- Card Técnica 2 -->
+            <div class="p-8 space-y-4 hover:bg-cyber-card/20 transition-colors">
+                <div class="text-cyber-amber text-sm font-bold flex items-center gap-2">
+                    <i class="ph ph-activity"></i> 02 // PERFORMANCE
+                </div>
+                <h4 class="text-base font-bold text-white uppercase">Otimização de Bancos</h4>
+                <p class="text-xs text-zinc-500 leading-relaxed">
+                    Diagnósticos e correções profundas em estruturas SQL/NoSQL, eliminando redundâncias e reduzindo o consumo de memória servidora.
+                </p>
+            </div>
+
+            <!-- Card Técnica 3 -->
+            <div class="p-8 space-y-4 hover:bg-cyber-card/20 transition-colors">
+                <div class="text-purple-400 text-sm font-bold flex items-center gap-2">
+                    <i class="ph ph-terminal-window"></i> 03 // INTEGRATION
+                </div>
+                <h4 class="text-base font-bold text-white uppercase">Webhooks e APIs</h4>
+                <p class="text-xs text-zinc-500 leading-relaxed">
+                    Pontes de comunicação automatizadas conectando microsserviços, ERPs corporativos e barramentos de mensageria instantânea.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Footer Terminal Estilo Linha de Compilação -->
+        <footer class="p-6 bg-cyber-card border-t border-cyber-border text-center text-[10px] text-zinc-600 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div>&copy; 2026 CoreEngine Environment. All pipelines operational.</div>
+            <div class="flex items-center gap-4 text-zinc-500">
+                <span>LOC: Maringá_BR</span>
+                <span>SHA-256: AUTH_OK</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script de Lógica do Terminal -->
+    <script>
+        const historyContainer = document.getElementById('terminal-history');
+        const inputField = document.getElementById('terminal-input');
+
+        const responses = {
+            ajuda: "Comandos válidos: <br>• <b class='text-white'>automacao</b> : Exibe logs de automações ativas.<br>• <b class='text-white'>performance</b> : Simula otimização de consultas e dados.<br>• <b class='text-white'>seguranca</b> : Verifica regras de conformidade LGPD.<br>• <b class='text-white'>limpar</b> : Limpa o histórico de comandos.",
+            automacao: "<span class='text-cyber-green'>[OK] Loading integration_engine.py...</span><br>→ Extração e tratamento de leads operando via Cron.<br>→ Webhooks de disparo de mensagens configurados em 200 OK.",
+            performance: "<span class='text-cyber-amber'>[WARN] Analisando latência de requisições antigas...</span><br>→ Indexação de tabelas aplicada com sucesso.<br>→ Redução de consumo de CPU calculada em até 42%.",
+            seguranca: "<span class='text-purple-400'>[SEC] Iniciando auditoria interna estrutural...</span><br>→ Logs protegidos e mascaramento de dados sensíveis ativado de ponta a ponta.",
+            limpar: ""
+        };
+
+        function handleCommand(event) {
+            event.preventDefault();
+            const cmd = inputField.value.trim().toLowerCase();
+            if (!cmd) return;
+
+            // Printa o comando inserido pelo usuário
+            appendHistory(`<span class="text-zinc-500">guest@core:~#</span> <span class="text-white">${inputField.value}</span>`);
+
+            if (cmd === 'limpar') {
+                historyContainer.innerHTML = "<div class='text-zinc-600'>Console limpo pelo administrador.</div>";
+            } else if (responses[cmd] !== undefined) {
+                appendHistory(responses[cmd]);
+            } else {
+                appendHistory(`<span class="text-red-500">✖ Erro: Comando '${cmd}' não reconhecido. Digite 'ajuda' para verificar parâmetros.</span>`);
+            }
+
+            inputField.value = "";
+            historyContainer.scrollTop = historyContainer.scrollHeight;
+        }
+
+        function runSuggested(cmdKey) {
+            inputField.value = cmdKey;
+            document.querySelector('form').dispatchEvent(new Event('submit'));
+        }
+
+        function appendHistory(text) {
+            const div = document.createElement('div');
+            div.className = "pt-1 border-t border-zinc-900/30";
+            div.innerHTML = text;
+            historyContainer.appendChild(div);
+        }
+    </script>
+</body>
+</html>

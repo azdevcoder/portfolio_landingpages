@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Engenharia & Manutenção Residencial</title>
+    <meta name="description" content="Serviços especializados de manutenção, reformas estruturais e automação predial com garantia, pontualidade e execução cirúrgica.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        home: {
+                            50: '#fcfbf9',   /* Fundo quente ultra-leve */
+                            100: '#f5f2eb',  /* Areia suave */
+                            800: '#292524',  /* Stone 800 (Chumbo quente) */
+                            900: '#1c1917',  /* Stone 900 (Quase preto mineral) */
+                            accent: '#b45309', /* Amber 700 (Tom bronze/madeira elegante) */
+                            accentHover: '#92400e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-home-50 text-home-800 font-sans antialiased selection:bg-home-accent selection:text-white">
+
+    <!-- Navbar Sólida e Confiável -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-home-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="ph-fill ph-house-line text-home-accent text-2xl"></i>
+                    <span class="font-extrabold text-lg tracking-tight text-home-900">Premium<span class="text-home-accent font-light">.manutenção</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#servicos" class="text-xs font-bold tracking-wider uppercase text-home-800 hover:text-home-accent transition-colors">Especialidades</a>
+                    <a href="#processo" class="text-xs font-bold tracking-wider uppercase text-home-800 hover:text-home-accent transition-colors">Como Trabalhamos</a>
+                    <a href="#orcamento" class="bg-home-900 hover:bg-home-accent text-white px-5 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition-all shadow-sm">
+                        Solicitar Visita Técnica
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Confiança e Engenharia Técnica -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden bg-gradient-to-b from-white to-home-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Texto Institucional -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <span class="inline-flex items-center gap-2 bg-home-100 border border-home-accent/20 text-home-accent text-xs font-bold tracking-wider uppercase px-3 py-1.5 rounded-lg mb-6">
+                        <i class="ph-bold ph-shield-check"></i> Engenharia e Execução Cirúrgica
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-home-900 tracking-tight leading-[1.15] mb-6">
+                        Manutenção residencial de alto padrão com <span class="text-home-accent">cronograma rígido</span> e garantia total.
+                    </h1>
+                    <p class="text-stone-500 text-sm sm:text-base font-light leading-relaxed mb-8 max-w-xl">
+                        Cuidamos da sua infraestrutura residencial para que você não precise se preocupar com nada. De revisões elétricas preditivas à automação inteligente e reparos estruturais minuciosos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5544900000000?text=Olá,%20gostaria%20de%20agendar%20uma%20visita%20técnica%20de%20manutenção." target="_blank" class="bg-home-accent hover:bg-home-accentHover text-white text-center px-8 py-4 rounded-xl font-bold text-sm tracking-wide transition-all shadow-lg flex items-center justify-center gap-2">
+                            <i class="ph ph-whatsapp-logo text-lg"></i>
+                            Falar com Engenheiro Técnico
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Painel Indicador de Diferenciais (Quebra o padrão de usar apenas uma foto estática) -->
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between h-40">
+                        <i class="ph-bold ph-wrench text-home-accent text-2xl"></i>
+                        <div>
+                            <h3 class="font-bold text-home-900 text-sm mb-1">Elétrica & Hidráulica</h3>
+                            <p class="text-xs text-stone-500">Mapeamento de carga e prevenção de vazamentos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between h-40">
+                        <i class="ph-bold ph-sliders-horizontal text-home-accent text-2xl"></i>
+                        <div>
+                            <h3 class="font-bold text-home-900 text-sm mb-1">Automação Residencial</h3>
+                            <p class="text-xs text-stone-500">Integração inteligente de iluminação e segurança.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between h-40">
+                        <i class="ph-bold ph-calendar text-home-accent text-2xl"></i>
+                        <div>
+                            <h3 class="font-bold text-home-900 text-sm mb-1">Pontualidade</h3>
+                            <p class="text-xs text-stone-500">Horários rigorosamente cumpridos na execução.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm flex flex-col justify-between h-40">
+                        <i class="ph-bold ph-scales text-home-accent text-2xl"></i>
+                        <div>
+                            <h3 class="font-bold text-home-900 text-sm mb-1">Transparência Total</h3>
+                            <p class="text-xs text-stone-500">Relatório fotográfico completo do antes e depois.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Processo: A Linha do Tempo Dinâmica -->
+    <section id="processo" class="py-24 bg-white border-y border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-home-accent text-xs font-bold tracking-widest uppercase block mb-2">Engenharia de Processos</span>
+                <h2 class="text-3xl font-extrabold text-home-900 tracking-tight">Como garantimos a tranquilidade da sua entrega</h2>
+            </div>
+
+            <!-- Timeline Horizontal Layout -->
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                
+                <!-- Passo 1 -->
+                <div class="relative bg-home-50 border border-stone-200 p-6 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -top-4 left-6 bg-home-accent text-white font-mono text-xs font-bold w-8 h-8 flex items-center justify-center rounded-lg shadow-md">
+                        01
+                    </div>
+                    <h3 class="font-bold text-base text-home-900 mt-2 mb-2">Visita de Diagnóstico</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">
+                        Um engenheiro técnico especializado realiza uma varredura completa utilizando equipamentos térmicos e de medição para identificar a real raiz do problema residencial.
+                    </p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="relative bg-home-50 border border-stone-200 p-6 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-6 bg-home-900 text-white font-mono text-xs font-bold w-8 h-8 flex items-center justify-center rounded-lg shadow-md">
+                        02
+                    </div>
+                    <h3 class="font-bold text-base text-home-900 mt-2 mb-2">Orçamento Memorial</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">
+                        Você recebe um descritivo detalhado listando materiais, insumos de alta qualidade, horas estimadas de execução e custos fixos, sem surpresas ocultas na nota final.
+                    </p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="relative bg-home-50 border border-stone-200 p-6 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute -top-4 left-6 bg-home-accent text-white font-mono text-xs font-bold w-8 h-8 flex items-center justify-center rounded-lg shadow-md">
+                        03
+                    </div>
+                    <h3 class="font-bold text-base text-home-900 mt-2 mb-2">Execução e Limpeza</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">
+                        Técnicos uniformizados executam a manutenção seguindo rígidos padrões de segurança, deixando o ambiente perfeitamente limpo, higienizado e pronto para uso imediato.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final e Formulário Rápido de Contato Técnico -->
+    <section id="orcamento" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="bg-home-900 border border-stone-800 p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden text-center" data-aos="zoom-in">
+            <h3 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">Evite surpresas e valorize seu patrimônio</h3>
+            <p class="text-xs sm:text-sm text-stone-400 max-w-xl mx-auto mb-10 leading-relaxed">
+                Manutenções preventivas reduzem em até 60% os gastos emergenciais com infraestrutura hidráulica e sobrecarga elétrica de redes residenciais.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5544900000000?text=Olá,%20gostaria%2520de%20solicitar%20um%20diagnóstico%20residencial." target="_blank" class="bg-white hover:bg-home-100 text-home-900 font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-2">
+                    <i class="ph ph-calendar-blank text-base"></i>
+                    Agendar Diagnóstico Técnico
+                </a>
+            </div>
+
+            <div class="mt-12 pt-6 border-t border-stone-800/80 grid grid-cols-3 gap-4 text-center font-mono text-[10px] text-stone-500">
+                <div>
+                    <span class="block text-white font-bold text-base sm:text-lg mb-1">100%</span>
+                    Garantia de Execução
+                </div>
+                <div>
+                    <span class="block text-white font-bold text-base sm:text-lg mb-1">+400</span>
+                    Imóveis Atendidos
+                </div>
+                <div>
+                    <span class="block text-white font-bold text-base sm:text-lg mb-1">Maringá</span>
+                    Atendimento Local Prontificado
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo Seguro -->
+    <footer class="py-12 border-t border-stone-200 text-center text-xs text-stone-500 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 space-y-2">
+            <p>&copy; 2026 Premium Engenharia & Manutenção Premium. Todos os direitos reservados.</p>
+            <p class="text-[10px] text-stone-400">Responsabilidade técnica e execução em estrita conformidade com as normas da ABNT e diretrizes de engenharia civil vigentes.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

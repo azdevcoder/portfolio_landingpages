@@ -1,0 +1,21 @@
+/* Custom Utilities */
+.glass-card {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom scrollbar para um look premium */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}

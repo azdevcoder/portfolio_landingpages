@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z|A Advocacia Patrimonial | Blindagem e Sucessão de Bens</title>
+    <meta name="description" content="Advocacia boutique especializada em blindagem de ativos corporativos, holdings familiares e planejamento sucessório de alto padrão.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            50: '#f5f5f4',  /* Stone ultra claro */
+                            100: '#e7e5e4', /* Stone claro */
+                            800: '#1c2d27', /* Verde Esmeralda muito escuro */
+                            900: '#111f1b', /* Verde Esmeralda quase preto */
+                            950: '#0a1310', /* Preto profundo com fundo verde */
+                            gold: '#c5a880', /* Ouro Velho fosco */
+                            goldHover: '#b3956d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-luxury-950 text-stone-300 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-950">
+
+    <!-- Navbar Assimétrica (Bordas ultrafinas, linhas limpas) -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-luxury-950/90 backdrop-blur-md border-b border-white/[0.03]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo Minimalista -->
+                <div class="flex items-center gap-3">
+                    <span class="font-serif text-2xl tracking-widest text-white uppercase border-r border-luxury-gold/30 pr-4">Z <span class="text-luxury-gold">&</span> A</span>
+                    <span class="text-[10px] tracking-[0.3em] text-stone-400 uppercase hidden sm:block">Advocacia <br>Patrimonial</span>
+                </div>
+                <!-- Links Discretos -->
+                <div class="hidden md:flex space-x-12 items-center">
+                    <a href="#tributo" class="text-xs tracking-widest uppercase hover:text-luxury-gold transition-colors">A Abordagem</a>
+                    <a href="#areas" class="text-xs tracking-widest uppercase hover:text-luxury-gold transition-colors">Práticas</a>
+                    <a href="#filosofia" class="text-xs tracking-widest uppercase hover:text-luxury-gold transition-colors">O Escritório</a>
+                    <a href="#contato" class="border border-luxury-gold/40 hover:border-luxury-gold text-luxury-gold px-6 py-3 text-xs tracking-widest uppercase transition-all hover:bg-luxury-gold hover:text-luxury-950 font-medium">
+                        Consultoria Restrita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Alinhamento Total à Esquerda (Espaço Negativo Elegante) -->
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+        <!-- Textura de Linhas Arquitetônicas sutis ao fundo -->
+        <div class="absolute inset-0 opacity-[0.02] bg-[radial-gradient(#c5a880_1px,transparent_1px)] [background-size:32px_32px]"></div>
+        <div class="absolute top-1/4 right-0 w-[600px] h-[600px] bg-luxury-800/10 rounded-full blur-[150px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10">
+            <div class="max-w-3xl" data-aos="fade-right" data-aos-duration="1200">
+                
+                <span class="text-luxury-gold text-xs tracking-[0.4em] uppercase font-medium block mb-6">
+                    Boutique Jurídica Exclusiva
+                </span>
+                
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-[1.15] mb-8">
+                    A segurança jurídica do seu <span class="italic text-luxury-gold font-normal">patrimônio</span> construído por gerações.
+                </h1>
+                
+                <p class="text-stone-400 text-base sm:text-lg font-light leading-relaxed mb-12 max-w-2xl border-l-2 border-luxury-gold/20 pl-6">
+                    Desenvolvemos estruturas corporativas e holdings familiares customizadas sob estrito sigilo. Protegemos ativos financeiros, imobiliários e societários contra volatilidades de mercado e transições sucessórias complexas.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#contato" class="bg-luxury-gold hover:bg-luxury-goldHover text-luxury-950 px-8 py-4 font-medium text-xs tracking-widest uppercase transition-all shadow-lg flex items-center justify-center gap-3">
+                        Agendar Reunião de Alinhamento
+                        <i class="ph ph-arrow-up-right text-base"></i>
+                    </a>
+                    <a href="#areas" class="bg-transparent hover:bg-white/[0.02] text-stone-300 border border-white/10 px-8 py-4 font-medium text-xs tracking-widest uppercase transition-all flex items-center justify-center">
+                        Conhecer Áreas de Prática
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Dor/Impacto: Layout com Frase Conceitual Gigante -->
+    <section id="tributo" class="py-32 bg-luxury-900 border-y border-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-baseline">
+                <div class="lg:col-span-4" data-aos="fade-up">
+                    <span class="text-luxury-gold text-xs tracking-[0.3em] uppercase block mb-4">Mapeamento de Riscos</span>
+                    <h2 class="font-serif text-3xl text-white font-medium">O custo de herdar sem planejamento prévio</h2>
+                </div>
+                <div class="lg:col-span-8 space-y-6 text-stone-400 font-light text-base lg:text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="font-serif text-white italic text-xl md:text-2xl leading-relaxed mb-4 text-stone-200">
+                        "Inventários tradicionais podem consumir até 20% do valor total bruto de um patrimônio familiar em custas e impostos."
+                    </p>
+                    <p>
+                        A ausência de mecanismos modernos de sucessão em vida e proteção de cotas sociais não apenas drena a liquidez financeira de um grupo familiar, mas frequentemente paralisa a operação de empresas consolidadas devido a disputas e burocracias judiciais prolongadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação: Grid Interativo Assíncrono (Tamanhos/Posições desalinhados) -->
+    <section id="areas" class="py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="mb-20" data-aos="fade-up">
+                <span class="text-luxury-gold text-xs tracking-[0.3em] uppercase block mb-3">Soluções Corporativas e Familiares</span>
+                <h2 class="font-serif text-3xl sm:text-5xl text-white font-light">Práticas de Alta Complexidade</h2>
+            </div>
+
+            <!-- Grid Assimétrico -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                
+                <!-- Card 1 (Ocupa 7 colunas, mais largo) -->
+                <div class="md:col-span-7 bg-white/[0.01] border border-white/[0.05] p-10 md:p-14 hover:border-luxury-gold/20 transition-all group" data-aos="fade-up">
+                    <span class="text-xs font-mono text-luxury-gold/50 block mb-6">01 / ESTRUTURAÇÃO</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4 font-light group-hover:text-luxury-gold transition-colors">Holdings Familiares & Patrimoniais</h3>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed max-w-xl">
+                        Centralização inteligente de bens imobiliários e ativos financeiros sob uma sociedade controladora, visando a redução lícita da carga tributária sobre locações/vendas e simplificação absoluta de herança.
+                    </p>
+                </div>
+
+                <!-- Card 2 (Ocupa 5 colunas, mais estreito, deslocado para baixo no desktop) -->
+                <div class="md:col-span-5 bg-white/[0.01] border border-white/[0.05] p-10 md:p-12 hover:border-luxury-gold/20 transition-all md:mt-12 group" data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-xs font-mono text-luxury-gold/50 block mb-6">02 / COMPLIANCE</span>
+                    <h3 class="font-serif text-2xl text-white mb-4 font-light group-hover:text-luxury-gold transition-colors">Blindagem de Ativos</h3>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed">
+                        Segregação legal entre o patrimônio operacional da empresa e os bens pessoais dos sócios, blindando o ecossistema familiar contra riscos civis, trabalhistas e fiscais decorrentes da atividade empresarial.
+                    </p>
+                </div>
+
+                <!-- Card 3 (Ocupa 5 colunas) -->
+                <div class="md:col-span-5 bg-white/[0.01] border border-white/[0.05] p-10 md:p-12 hover:border-luxury-gold/20 transition-all group" data-aos="fade-up">
+                    <span class="text-xs font-mono text-luxury-gold/50 block mb-6">03 / SUCESSÃO</span>
+                    <h3 class="font-serif text-2xl text-white mb-4 font-light group-hover:text-luxury-gold transition-colors">Planejamento Sucessório</h3>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed">
+                        Criação de testamentos sofisticados, doações com reserva de usufruto e cláusulas restritivas de inalienabilidade e impenhorabilidade para garantir que a vontade do fundador seja rigorosamente perpétua.
+                    </p>
+                </div>
+
+                <!-- Card 4 (Ocupa 7 colunas, deslocado para cima no desktop) -->
+                <div class="md:col-span-7 bg-white/[0.01] border border-white/[0.05] p-10 md:p-14 hover:border-luxury-gold/20 transition-all md:-mt-12 group" data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-xs font-mono text-luxury-gold/50 block mb-6">04 / INTERNACIONAL</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4 font-light group-hover:text-luxury-gold transition-colors">Estruturas Offshore & Trusts</h3>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed max-w-xl">
+                        Alocação e diversificação internacional de capital através de fundos exclusivos e veículos corporativos externos, garantindo neutralidade cambial e máxima privacidade sob diretrizes internacionais de compliance.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofia do Escritório (Bloco Duplo Editorial) -->
+    <section id="filosofia" class="py-32 bg-luxury-900/50 border-t border-white/[0.02]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Coluna Texto -->
+                <div data-aos="fade-right">
+                    <span class="text-luxury-gold text-xs tracking-[0.3em] uppercase block mb-4">Diferencial Boutique</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white font-light mb-8 leading-tight">Atendimento estritamente personalizado. Sem escala, sem padronização.</h2>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed mb-6">
+                        Diferente das grandes bancas de advocacia de massa, nosso modelo de atuação é intencionalmente restrito. Atendemos um número controlado de famílias e grupos econômicos por ano.
+                    </p>
+                    <p class="text-stone-400 font-light text-sm leading-relaxed">
+                        Cada contrato, ata societária ou acordo de acionistas é redigido de forma artesanal, considerando as nuances psicológicas familiares e os objetivos de expansão do negócio a longo prazo.
+                    </p>
+                </div>
+
+                <!-- Coluna Métrica/Conceitual (Em vez de foto ou ícone comum) -->
+                <div class="bg-luxury-800/40 p-12 border border-luxury-gold/10 relative" data-aos="fade-left">
+                    <div class="absolute top-0 right-0 p-4 text-luxury-gold/10 font-serif text-9xl select-none pointer-events-none">
+                        §
+                    </div>
+                    <div class="space-y-8 relative z-10">
+                        <div>
+                            <div class="font-serif text-4xl text-white font-light mb-1">R$ 1.2B+</div>
+                            <div class="text-xs tracking-widest uppercase text-stone-400">Em ativos sob governança jurídica</div>
+                        </div>
+                        <div class="border-t border-white/5 pt-6">
+                            <div class="font-serif text-4xl text-white font-light mb-1">100%</div>
+                            <div class="text-xs tracking-widest uppercase text-stone-400">De sigilo e confidencialidade contratual</div>
+                        </div>
+                        <div class="border-t border-white/5 pt-6">
+                            <div class="font-serif text-4xl text-white font-light mb-1">Pronto Atendimento</div>
+                            <div class="text-xs tracking-widest uppercase text-stone-400">Canal direto e exclusivo com os sócios fundadores</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Footer Elegant Contact -->
+    <footer id="contato" class="py-32 border-t border-white/[0.03]">
+        <div class="max-w-5xl mx-auto px-6 text-center" data-aos="zoom-in">
+            <span class="text-luxury-gold text-xs tracking-[0.4em] uppercase block mb-6">Acesso Privado</span>
+            <h2 class="font-serif text-4xl sm:text-6xl text-white font-light mb-8 leading-tight">Inicie uma avaliação confidencial da sua estrutura</h2>
+            <p class="text-stone-400 font-light text-base max-w-2xl mx-auto mb-12">
+                As consultas iniciais são conduzidas diretamente pelos sócios seniores, sob total acordo de confidencialidade (NDA). Selecione o canal seguro abaixo.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Botão WhatsApp Corporativo Seguro -->
+                <a href="https://wa.me/5544900000000?text=Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20privada%20de%20an%C3%A1lise%20patrimonial." target="_blank" class="bg-luxury-gold hover:bg-luxury-goldHover text-luxury-950 px-10 py-5 font-semibold text-xs tracking-widest uppercase transition-all flex items-center justify-center gap-3">
+                    <i class="ph-fill ph-shield-check text-base"></i>
+                    Contato Seguro Via WhatsApp
+                </a>
+                <!-- Agendamento por E-mail Institucional -->
+                <a href="mailto:contato@escritorio.comlb" class="bg-transparent hover:bg-white/[0.02] text-white border border-white/10 px-10 py-5 font-semibold text-xs tracking-widest uppercase transition-all flex items-center justify-center">
+                    Agendar via E-mail C-Level
+                </a>
+            </div>
+
+            <div class="mt-32 pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-600 gap-4">
+                <p>&copy; 2026 Z|A Advocacia Patrimonial. Todos os direitos reservados. Código de Ética e Disciplina da OAB estritamente observado.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-stone-400 transition-colors">Termos de Confidencialidade</a>
+                    <a href="#" class="hover:text-stone-400 transition-colors">Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20protocolos%20de%20est%C3%A9tica." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform hover:bg-green-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-current text-white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

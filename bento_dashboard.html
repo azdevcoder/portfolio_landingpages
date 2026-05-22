@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusOS | Automação e Inteligência de Processos</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nexus: {
+                            50: '#f4f4f5',
+                            900: '#18181b', /* Zinc 900 */
+                            950: '#09090b', /* Zinc 950 */
+                            cyan: '#06b6d4', /* Ciano Elétrico */
+                            emerald: '#10b981' /* Verde de Sucesso */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-nexus-950 text-zinc-400 font-sans antialiased selection:bg-nexus-cyan selection:text-nexus-950">
+
+    <!-- Navbar Flutuante Suspensa -->
+    <div class="fixed top-6 left-0 right-0 z-50 px-4">
+        <nav class="max-w-4xl mx-auto bg-nexus-900/80 border border-zinc-800/60 backdrop-blur-xl px-6 py-3 rounded-full flex justify-between items-center shadow-2xl">
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-nexus-cyan animate-pulse"></div>
+                <span class="text-white font-bold tracking-tight text-sm">nexus.os</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#solucoes" class="text-xs font-medium hover:text-white transition-colors">Módulos</a>
+                <a href="#CTA" class="bg-white hover:bg-zinc-200 text-nexus-950 px-4 py-2 rounded-full text-xs font-bold transition-all">
+                    Testar Painel
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Introdução Tática -->
+    <section class="pt-36 pb-12 text-center px-4 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-nexus-cyan/10 rounded-full blur-[120px] -z-10"></div>
+        
+        <div class="max-w-3xl mx-auto">
+            <span class="border border-zinc-800 bg-zinc-900/50 text-zinc-300 text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full inline-block mb-6">
+                Infraestrutura de Processos Ativa
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                Centralize sua operação em um único <span class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-cyan to-nexus-emerald">ecossistema modular.</span>
+            </h1>
+            <p class="text-sm sm:text-base text-zinc-500 font-light max-w-xl mx-auto">
+                Substitua planilhas estáticas e scripts isolados por blocos inteligentes que conversam entre si em tempo real.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Principal: O Bento Grid Corrigido -->
+    <section id="solucoes" class="py-12 max-w-6xl mx-auto px-6 lg:px-8">
+        
+        <!-- Grid Ajustado: Altura automática no mobile, linhas fixas a partir do md -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[190px]">
+            
+            <!-- CARD 1: Bloco de Destaque Largo -->
+            <div class="md:col-span-2 md:row-span-2 bg-zinc-900 border border-zinc-800/80 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group hover:border-zinc-700 transition-all min-h-[300px] md:min-h-auto">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-nexus-cyan/5 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="flex justify-between items-start mb-6 md:mb-0">
+                    <div class="bg-nexus-cyan/10 p-3 rounded-2xl text-nexus-cyan">
+                        <i class="ph-bold ph-chart-line-up text-2xl"></i>
+                    </div>
+                    <span class="text-[10px] font-mono text-zinc-400 bg-zinc-950 px-2 py-1 rounded border border-zinc-800">Status: Operacional</span>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Dashboards em Tempo Real</h3>
+                    <p class="text-xs text-zinc-500 leading-relaxed max-w-md">
+                        Monitore consultas de banco de dados, fluxos de caixas e respostas de APIs externas com latência zero. Uma visão consolidada para tomadas de decisão cirúrgicas no seu negócio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 2: Bloco Alto de Ação Rápida -->
+            <div class="md:row-span-2 bg-gradient-to-b from-zinc-900 to-zinc-950 border border-zinc-800/80 rounded-3xl p-6 flex flex-col justify-between hover:border-zinc-700 transition-all min-h-[300px] md:min-h-auto">
+                <div class="space-y-4 mb-6 md:mb-0">
+                    <div class="bg-zinc-800/50 p-2.5 rounded-xl inline-block text-zinc-300">
+                        <i class="ph-bold ph-git-merge text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Integrações Nativas</h3>
+                    <p class="text-xs text-zinc-500 leading-relaxed">
+                        Conecte seu ecossistema ao WhatsApp, ERPs internos ou bancos SQL com poucos cliques e sem quebra de dados.
+                    </p>
+                </div>
+
+                <!-- Simulação de Mini Interface Interativa -->
+                <div class="bg-zinc-950 border border-zinc-800 p-3 rounded-xl space-y-2 font-mono text-[10px]">
+                    <div class="flex justify-between text-zinc-500">
+                        <span>Webhook Recieved</span>
+                        <span class="text-nexus-emerald">200 OK</span>
+                    </div>
+                    <div class="w-full bg-zinc-900 h-1 rounded-full overflow-hidden">
+                        <div class="bg-nexus-emerald w-3/4 h-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Bloco Pequeno de Automação -->
+            <div class="bg-zinc-900 border border-zinc-800/80 rounded-3xl p-6 flex items-center gap-4 hover:border-zinc-700 transition-all h-full">
+                <div class="bg-zinc-800 p-3 rounded-xl text-nexus-cyan flex-shrink-0">
+                    <i class="ph-bold ph-cpu text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-1">Foco em Scripts</h4>
+                    <p class="text-[11px] text-zinc-500 leading-tight">Gatilhos automáticos em Python e JavaScript.</p>
+                </div>
+            </div>
+
+            <!-- CARD 4: Bloco Pequeno de Performance -->
+            <div class="bg-zinc-900 border border-zinc-800/80 rounded-3xl p-6 flex items-center gap-4 hover:border-zinc-700 transition-all h-full">
+                <div class="bg-zinc-800 p-3 rounded-xl text-nexus-emerald flex-shrink-0">
+                    <i class="ph-bold ph-lightning text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-1">Otimização HD</h4>
+                    <p class="text-[11px] text-zinc-500 leading-tight">Redução drástica em gargalos e requisições duplicadas.</p>
+                </div>
+            </div>
+
+            <!-- CARD 5: Bloco Pequeno de Segurança -->
+            <div class="bg-zinc-900 border border-zinc-800/80 rounded-3xl p-6 flex items-center gap-4 hover:border-zinc-700 transition-all h-full">
+                <div class="bg-zinc-800 p-3 rounded-xl text-purple-400 flex-shrink-0">
+                    <i class="ph-bold ph-shield-check text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-1">Proteção Total</h4>
+                    <p class="text-[11px] text-zinc-500 leading-tight">Logs transparentes em total conformidade com a LGPD.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mini CTA Unificado -->
+    <section id="CTA" class="py-16 text-center px-4">
+        <div class="bg-gradient-to-r from-zinc-900 to-zinc-950 border border-zinc-800 max-w-2xl mx-auto p-10 rounded-[2.5rem] relative overflow-hidden">
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-4">Pronto para transformar sua infraestrutura?</h3>
+            <p class="text-xs text-zinc-500 max-w-md mx-auto mb-6">
+                Construa painéis robustos que se adaptam exatamente ao tamanho das dores operacionais da sua empresa.
+            </p>
+            <div class="flex justify-center gap-3">
+                <button onclick="changeStatus()" class="bg-nexus-cyan hover:opacity-90 text-nexus-950 font-bold text-xs px-6 py-3 rounded-full transition-all shadow-lg shadow-nexus-cyan/10">
+                    Ativar Demonstração
+                </button>
+            </div>
+            
+            <!-- Notificação Simulada Dinâmica -->
+            <div id="demo-toast" class="mt-4 inline-block font-mono text-[10px] bg-zinc-950 border border-zinc-800 px-3 py-1.5 rounded-lg text-zinc-500 opacity-0 transition-all duration-300">
+                Aguardando sinal do servidor...
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Discreto -->
+    <footer class="py-8 text-center text-[11px] text-zinc-600 border-t border-zinc-900">
+        <p>&copy; 2026 NexusOS Enterprise. Arquiteturas modulares e performáticas.</p>
+    </footer>
+<!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20protocolos%20de%20est%C3%A9tica." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform hover:bg-green-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-current text-white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+    <!-- Lógica Simples de Microinteração -->
+    <script>
+        function changeStatus() {
+            const toast = document.getElementById('demo-toast');
+            toast.style.opacity = '1';
+            toast.classList.remove('text-zinc-500');
+            toast.classList.add('text-nexus-cyan', 'border-nexus-cyan/30');
+            toast.textContent = '❖ Conexão simulada: Painel Nexus ativado com sucesso!';
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

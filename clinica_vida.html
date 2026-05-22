@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Instituto | Dermatologia e Estética Avançada</title>
+    <meta name="description" content="Tecnologia de ponta e ciência aliadas à sua beleza natural. Tratamentos dermatológicos e estéticos personalizados.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#fafafa',   /* Fundo ultra limpo */
+                            100: '#f4f4f5',  /* Cinza suave para contraste */
+                            200: '#e4e4e7',
+                            800: '#27272a',  /* Grafite escuro para textos */
+                            900: '#09090b',  /* Preto puro para títulos */
+                            rose: '#e0b0a8', /* Rosa fosco / Nude sofisticado */
+                            roseHover: '#d49e95'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-medical-50 text-medical-800 font-sans antialiased selection:bg-medical-rose selection:text-medical-900">
+
+    <!-- Navbar Minimalista Fluida (Fundo Claro com Blur) -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/70 backdrop-blur-md border-b border-medical-200/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <span class="font-serif text-2xl font-medium tracking-wide text-medical-900">vida.</span>
+                </div>
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="#filosofia" class="text-xs font-semibold tracking-wider uppercase text-medical-800 hover:text-medical-rose transition-colors">Filosofia</a>
+                    <a href="#procedimentos" class="text-xs font-semibold tracking-wider uppercase text-medical-800 hover:text-medical-rose transition-colors">Tratamentos</a>
+                    <a href="#tecnologia" class="text-xs font-semibold tracking-wider uppercase text-medical-800 hover:text-medical-rose transition-colors">Tecnologia</a>
+                    <a href="#contato" class="bg-medical-900 hover:bg-medical-800 text-white px-6 py-3 rounded-full text-xs font-bold tracking-wider uppercase transition-all shadow-sm">
+                        Agendar Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Grid Simétrico Editorial -->
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-gradient-to-b from-white to-medical-50">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-medical-rose/20 rounded-full blur-[120px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Texto Hero -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <span class="inline-block bg-medical-rose/20 text-medical-rose-800 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+                        Ciência e Autenticidade
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-6xl text-medical-900 leading-[1.15] mb-6">
+                        Sua pele merece a precisão da <span class="italic font-normal">alta tecnologia</span> médica.
+                    </h1>
+                    <p class="text-zinc-500 text-base sm:text-lg font-light leading-relaxed mb-10 max-w-xl">
+                        Unimos protocolos dermatológicos baseados em evidências científicas a um olhar artístico e minimalista. Realçamos sua melhor versão com naturalidade e elegância.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contato" class="bg-medical-900 hover:bg-medical-800 text-white text-center px-8 py-4 rounded-full font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                            Falar com nossa Ouvidoria
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#procedimentos" class="bg-white hover:bg-medical-100 text-medical-900 text-center border border-medical-200 px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-all">
+                            Explorar Protocolos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Elemento Visual Assimétrico de "Moodboard" (Simula Revista) -->
+                <div class="relative flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative w-full max-w-md aspect-[4/5] bg-white rounded-[3rem] p-4 shadow-xl border border-medical-200/40">
+                        <div class="w-full h-full rounded-[2.5rem] bg-gradient-to-tr from-medical-100 to-medical-rose/30 flex flex-col justify-between p-8 relative overflow-hidden">
+                            <!-- Elemento Gráfico Minimalista -->
+                            <div class="text-medical-900/10 font-serif text-[12rem] absolute -bottom-10 -right-5 select-none pointer-events-none">❖</div>
+                            
+                            <div class="flex justify-between items-start">
+                                <i class="ph-light ph-sparkles text-medical-900 text-3xl"></i>
+                                <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400">Estética Integrada</span>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-2xl text-medical-900 mb-2">Beleza Consciente</h3>
+                                <p class="text-zinc-500 text-xs leading-relaxed max-w-[240px]">Gerenciamento do envelhecimento cutâneo sem excessos e com foco na saúde celular.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto / Filosofia (Linhas Limpas) -->
+    <section id="filosofia" class="py-24 bg-white border-y border-medical-200/60">
+        <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+            <span class="text-medical-rose font-bold text-xs tracking-widest uppercase block mb-4">A Filosofia Vida</span>
+            <p class="font-serif text-2xl sm:text-4xl text-medical-900 leading-relaxed font-light">
+                “Acreditamos que os melhores procedimentos são aqueles que <span class="italic">ninguém nota</span> que foram feitos, apenas percebem o frescor e o viço de uma pele visivelmente saudável.”
+            </p>
+            <div class="w-12 h-[1px] bg-medical-rose mx-auto mt-8"></div>
+        </div>
+    </section>
+
+    <!-- Componente Avançado: Menu por Abas Dinâmicas (Tratamentos) -->
+    <section id="procedimentos" class="py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-zinc-400 text-xs font-bold tracking-widest uppercase block mb-2">Menu de Especialidades</span>
+                <h2 class="font-serif text-3xl sm:text-5xl text-medical-900">Protocolos Sob Medida</h2>
+            </div>
+
+            <!-- Navegadores das Abas (Abas arredondadas estilo pílula) -->
+            <div class="flex justify-center mb-12" data-aos="fade-up">
+                <div class="bg-white border border-medical-200 p-1.5 rounded-full flex gap-2 overflow-x-auto max-w-full">
+                    <button onclick="switchTab('face')" id="btn-face" class="tab-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all bg-medical-900 text-white shadow-sm">
+                        Facial Premium
+                    </button>
+                    <button onclick="switchTab('corpo')" id="btn-corpo" class="tab-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all text-zinc-500 hover:text-medical-900">
+                        Corporal Avançado
+                    </button>
+                    <button onclick="switchTab('tecnos')" id="btn-tecnos" class="tab-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all text-zinc-500 hover:text-medical-900">
+                        Injetáveis & Laser
+                    </button>
+                </div>
+            </div>
+
+            <!-- Conteúdo das Abas -->
+            <div class="max-w-4xl mx-auto">
+                <!-- Aba 1: Facial -->
+                <div id="tab-face" class="tab-content grid md:grid-cols-2 gap-8 active">
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Lifting Não-Cirúrgico</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Ultrassom microfocado para reposicionamento de camadas musculares faciais e estímulo profundo de colágeno.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Sessões customizadas</span>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Skin Glow Protocol</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Associação de microagulhamento robótico com drug delivery de vitaminas para restauração instantânea do viço.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Resultado imediato</span>
+                    </div>
+                </div>
+
+                <!-- Aba 2: Corporal -->
+                <div id="tab-corpo" class="tab-content grid md:grid-cols-2 gap-8 hidden">
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Definição Corporal HD</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Tecnologia eletromagnética focada na tonificação muscular simultânea à redução de depósitos de gordura localizada.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Alta Performance</span>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Remodelamento de Glúteos</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Protocolos exclusivos utilizando bioestimuladores combinados para melhora expressiva de firmeza e textura cutânea.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Flacidez Zero</span>
+                    </div>
+                </div>
+
+                <!-- Aba 3: Injetáveis -->
+                <div id="tab-tecnos" class="tab-content grid md:grid-cols-2 gap-8 hidden">
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Harmonização Arquitetônica</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Preenchimento estratégico estrutural com ácido hialurônico para devolver os pontos de luz naturais do rosto.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Ácido Hialurônico</span>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-medical-200/50 shadow-sm">
+                        <h3 class="font-serif text-xl text-medical-900 mb-3">Modulação de Expressão</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed mb-6">Aplicação preventiva e corretiva de toxina botulínica avançada, mantendo a movimentação natural dos olhos e testa.</p>
+                        <span class="text-xs font-bold text-medical-rose uppercase tracking-wider">Botox Preventivo</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA & Footer Limpo -->
+    <footer id="contato" class="py-24 bg-white border-t border-medical-200/60">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+            <h2 class="font-serif text-3xl sm:text-5xl text-medical-900 mb-6">Agende seu mapeamento facial personalizado</h2>
+            <p class="text-zinc-500 max-w-xl mx-auto mb-10 text-sm sm:text-base">
+                Nossas vagas para novos pacientes de estética médica são coordenadas de forma a garantir tempo de dedicação integral em cada consulta.
+            </p>
+            
+            <a href="https://wa.me/5544900000000?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%20dermatológica%20na%20Vida." target="_blank" class="inline-flex items-center gap-3 bg-medical-900 hover:bg-medical-800 text-white px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase transition-all shadow-md">
+                <i class="ph ph-calendar-blank text-base"></i>
+                Consultar Horários Disponíveis
+            </a>
+            
+            <p class="mt-20 text-xs text-zinc-400">
+                &copy; 2026 Vida Instituto Médico. Direção Técnica Médica em total conformidade com as normas éticas do CFM e CRM vigentes.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts (AOS + Lógica Simples de Abas) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Lógica de Abas
+        function switchTab(tabId) {
+            // Esconde todos os conteúdos
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            // Remove classes ativas dos botões
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-medical-900', 'text-white', 'shadow-sm');
+                btn.classList.add('text-zinc-500');
+            });
+
+            // Mostra o conteúdo selecionado
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            
+            // Ativa o botão selecionado
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.add('bg-medical-900', 'text-white', 'shadow-sm');
+            activeBtn.classList.remove('text-zinc-500');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier ÉPure | Coleção Essenciais Atemporais</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        boutique: {
+                            50: '#FAF9F6',   /* Off-white editorial */
+                            100: '#F3F2EE',  /* Areia ultra leve */
+                            800: '#1A1A1A',  /* Preto fosco mineral */
+                            accent: '#D4C5B9' /* Nude/Bege linho sofisticado */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-boutique-50 text-boutique-800 font-sans antialiased selection:bg-boutique-accent selection:text-boutique-800">
+
+    <!-- Header Elegante e Minimalista -->
+    <header class="w-full border-b border-boutique-100 bg-boutique-50/80 backdrop-blur-md fixed top-0 z-50 px-6 sm:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center h-20">
+            <a href="#" class="font-serif text-xl tracking-[0.2em] uppercase font-semibold">ÉPURE</a>
+            
+            <nav class="hidden md:flex space-x-10 text-xs tracking-[0.15em] uppercase font-medium">
+                <a href="#colecao" class="hover:text-stone-500 transition-colors">Coleção</a>
+                <a href="#filosofia" class="hover:text-stone-500 transition-colors">Filosofia</a>
+                <a href="#lookbook" class="hover:text-stone-500 transition-colors">Lookbook</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button class="relative p-2" onclick="alert('Sacola de compras simulada vazia.')">
+                    <i class="ph ph-shopping-bag text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-boutique-800 rounded-full"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section: Impacto Editorial Tipo Revista -->
+    <section class="min-h-screen flex items-center pt-24 pb-12 px-6 sm:px-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Bloco de Texto Curado -->
+            <div class="lg:col-span-6 space-y-6 z-10">
+                <span class="text-[10px] tracking-[0.3em] uppercase font-medium text-stone-500 block">
+                    Drop 01 // Edição Limitada
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl font-light tracking-wide leading-tight text-stone-900">
+                    O manifesto do <br><span class="italic font-normal">minimalismo</span> vestido.
+                </h1>
+                <p class="text-xs sm:text-sm font-light text-stone-500 leading-relaxed max-w-md">
+                    Peças arquitetadas em linho puro, algodão egípcio e cortes de alfaiataria desconstruída. Criadas para durar estações, desenhadas para expressar identidade.
+                </p>
+                <div class="pt-4">
+                    <a href="#colecao" class="inline-block bg-boutique-800 hover:bg-stone-700 text-white text-[11px] font-medium tracking-[0.2em] uppercase px-8 py-4 transition-all">
+                        Explorar Peças
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagens de Campanha (Lookbook Grid) -->
+            <div id="lookbook" class="lg:col-span-6 grid grid-cols-12 gap-4 relative">
+                <div class="col-span-8 bg-boutique-100 aspect-[3/4] border border-stone-200 shadow-sm relative group overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&auto=format&fit=crop&q=80" alt="Boutique Editorial Hero" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-boutique-800/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+                <div class="col-span-4 bg-stone-200 aspect-[2/3] self-end border border-stone-300 shadow-sm overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&auto=format&fit=crop&q=80" alt="Texture Details" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Grid de Produtos: Vitrine Editorial -->
+    <section id="colecao" class="py-24 border-t border-boutique-100 bg-white px-6 sm:px-12">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-baseline mb-16 border-b border-boutique-100 pb-6">
+                <h2 class="font-serif text-2xl tracking-wide text-stone-900">A Estética do Essencial</h2>
+                <span class="text-[11px] tracking-widest text-stone-400 uppercase mt-2 sm:mt-0">Disponibilidade: Pronta Entrega</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                
+                <!-- Item 1 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-boutique-50 aspect-[3/4] border border-boutique-100 flex flex-col justify-between p-4 relative overflow-hidden transition-all group-hover:bg-boutique-100/30">
+                        <div class="flex justify-between items-center z-10 relative">
+                            <span class="text-[9px] tracking-widest uppercase bg-white/90 backdrop-blur-sm border border-stone-200 px-2 py-0.5">Premium</span>
+                            <button onclick="event.stopPropagation(); this.querySelector('i').classList.toggle('ph-fill')" class="w-7 h-7 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center border border-stone-200 shadow-sm">
+                                <i class="ph ph-heart text-sm text-stone-600 hover:text-red-500 transition-colors"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Imagem do Produto 1 -->
+                        <div class="absolute inset-0 z-0">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&auto=format&fit=crop&q=80" alt="Camisa Linho" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        
+                        <div class="flex justify-between items-end z-10 relative mt-auto">
+                            <span class="text-[9px] font-mono text-white tracking-wider bg-boutique-800/40 backdrop-blur-sm px-1.5 py-0.5 rounded">REF // 9021-LN</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex justify-between items-start text-xs font-medium tracking-wide">
+                        <div>
+                            <h3 class="text-stone-900 uppercase">Camisa Linho Desestruturada</h3>
+                            <p class="text-stone-400 font-light mt-1">Corte reto, botões orgânicos</p>
+                        </div>
+                        <span class="text-stone-900 font-semibold">R$ 389</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-boutique-50 aspect-[3/4] border border-boutique-100 flex flex-col justify-between p-4 relative overflow-hidden transition-all group-hover:bg-boutique-100/30">
+                        <div class="flex justify-between items-center z-10 relative">
+                            <span class="text-[9px] tracking-widest uppercase bg-white/90 backdrop-blur-sm border border-stone-200 px-2 py-0.5">100% Algodão</span>
+                            <button onclick="event.stopPropagation(); this.querySelector('i').classList.toggle('ph-fill')" class="w-7 h-7 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center border border-stone-200 shadow-sm">
+                                <i class="ph ph-heart text-sm text-stone-600 hover:text-red-500 transition-colors"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Imagem do Produto 2 -->
+                        <div class="absolute inset-0 z-0">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop&q=80" alt="Tee Box" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        
+                        <div class="flex justify-between items-end z-10 relative mt-auto">
+                            <span class="text-[9px] font-mono text-white tracking-wider bg-boutique-800/40 backdrop-blur-sm px-1.5 py-0.5 rounded">REF // 4012-EG</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex justify-between items-start text-xs font-medium tracking-wide">
+                        <div>
+                            <h3 class="text-stone-900 uppercase">Tee Box Algodão Egípcio</h3>
+                            <p class="text-stone-400 font-light mt-1">Modelagem oversized pesada</p>
+                        </div>
+                        <span class="text-stone-900 font-semibold">R$ 189</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group cursor-pointer">
+                    <div class="bg-boutique-50 aspect-[3/4] border border-boutique-100 flex flex-col justify-between p-4 relative overflow-hidden transition-all group-hover:bg-boutique-100/30">
+                        <div class="flex justify-between items-center z-10 relative">
+                            <span class="text-[9px] tracking-widest uppercase bg-white/90 backdrop-blur-sm border border-stone-200 px-2 py-0.5">Alfaiataria</span>
+                            <button onclick="event.stopPropagation(); this.querySelector('i').classList.toggle('ph-fill')" class="w-7 h-7 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center border border-stone-200 shadow-sm">
+                                <i class="ph ph-heart text-sm text-stone-600 hover:text-red-500 transition-colors"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Imagem do Produto 3 -->
+                        <div class="absolute inset-0 z-0">
+                            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop&q=80" alt="Pantalona" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </div>
+                        
+                        <div class="flex justify-between items-end z-10 relative mt-auto">
+                            <span class="text-[9px] font-mono text-white tracking-wider bg-boutique-800/40 backdrop-blur-sm px-1.5 py-0.5 rounded">REF // 7055-AF</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex justify-between items-start text-xs font-medium tracking-wide">
+                        <div>
+                            <h3 class="text-stone-900 uppercase">Pantalona Pregas Estruturadas</h3>
+                            <p class="text-stone-400 font-light mt-1">Cintura alta, caimento fluido</p>
+                        </div>
+                        <span class="text-stone-900 font-semibold">R$ 449</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Newsletter Curada / Lista VIP -->
+    <section id="filosofia" class="py-24 bg-boutique-100 px-6 sm:px-12 text-center">
+        <div class="max-w-xl mx-auto space-y-6">
+            <i class="ph ph-scissors text-2xl text-stone-400"></i>
+            <h3 class="font-serif text-3xl font-light tracking-wide text-stone-900">Atendimento Exclusivo</h3>
+            <p class="text-xs text-stone-500 font-light leading-relaxed">
+                Inscreva-se para receber convites para nossos drops privados de peças únicas, curadoria de alfaiataria sazonal e frete prioritário.
+            </p>
+            
+            <form onsubmit="event.preventDefault(); alert('Inscrição confirmada na lista exclusiva Epure.');" class="pt-4 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+                <input type="email" placeholder="Endereço de e-mail" required class="flex-1 bg-white border border-stone-200 px-4 py-3 text-xs tracking-wider focus:outline-none focus:border-stone-400">
+                <button type="submit" class="bg-boutique-800 hover:bg-stone-700 text-white text-[10px] tracking-[0.2em] uppercase font-medium px-6 py-4 transition-colors">
+                    Participar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Discreto e Limpo -->
+    <footer class="py-12 bg-boutique-50 text-center text-[10px] tracking-[0.15em] uppercase text-stone-400 border-t border-boutique-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Épure Atelier. Crafted for permanence.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-stone-700">Políticas</a>
+                <a href="#" class="hover:text-stone-700">Suporte Concierge</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

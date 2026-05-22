@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ápice Contabilidade Estratégica | Planejamento e Redução de Impostos</title>
+    <meta name="description" content="Recupere impostos pagos indevidamente e reduza a carga tributária da sua empresa de forma 100% legal.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            900: '#78350f',
+                            950: '#451a03',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-brand-500 selection:text-slate-950">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-slate-950/80 backdrop-blur-md border-b border-white/5" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="ph-fill ph-briefcase text-brand-500 text-3xl"></i>
+                    <span class="text-white font-bold text-xl tracking-tight uppercase">Ápice</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#solucao" class="text-sm font-medium hover:text-white transition-colors">O Diagnóstico</a>
+                    <a href="#diferenciais" class="text-sm font-medium hover:text-white transition-colors">Diferenciais</a>
+                    <a href="#auditoria" class="text-sm font-medium hover:text-white transition-colors">Como Funciona</a>
+                    <a href="#contato" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-[0_0_15px_rgba(217,119,6,0.3)] hover:shadow-[0_0_25px_rgba(217,119,6,0.5)]">Falar com Contador</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-10"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-600/5 rounded-full blur-[140px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-sm font-semibold mb-8">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                </span>
+                Foco em Micro e Pequenas Empresas
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Sua empresa pode estar pagando <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-yellow-500">até 35% a mais de impostos.</span>
+            </h1>
+            
+            <p class="mt-4 max-w-3xl text-lg md:text-xl mx-auto mb-10 text-slate-400">
+                Recuperamos impostos pagos indevidamente nos últimos 5 anos e reestruturamos o seu enquadramento fiscal de forma 100% legal para blindar o seu caixa e maximizar sua margem de lucro.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contato" class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(217,119,6,0.3)] hover:-translate-y-1">
+                    Solicitar Diagnóstico Tributário Gratuito
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#diferenciais" class="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur-sm">
+                    Conhecer Nosso Método
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Value Section -->
+    <section id="solucao" class="py-24 bg-slate-900/40 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Estancando o Sangramento do Seu Caixa</h2>
+                <p class="text-lg text-slate-400">A complexidade fiscal do país faz com que a maioria dos negócios pague taxas indevidas por puro erro de categorização. Nós resolvemos isso para você.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white/[0.02] p-8 rounded-2xl border border-white/10 hover:border-brand-500/30 transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-chart-bar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Auditoria Avançada</h3>
+                    <p class="text-slate-400">Analisamos retroativamente as guias geradas para identificar créditos acumulados que podem ser resgatados em dinheiro ou compensação.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white/[0.02] p-8 rounded-2xl border border-white/10 hover:border-brand-500/30 transition-colors" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-scales text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Risco Zero & Compliance</h3>
+                    <p class="text-slate-400">Todo o processo é feito em conformidade estrita com a Receita Federal, garantindo uma transição segura e sem riscos de malha fina.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white/[0.02] p-8 rounded-2xl border border-white/10 hover:border-brand-500/30 transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center mb-6 text-brand-400">
+                        <i class="ph ph-user-gear text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Contabilidade de Verdade</h3>
+                    <p class="text-slate-400">Esqueça os escritórios tradicionais e burocráticos. Você ganha um parceiro de negócios estratégico acessível no WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics / Proof Section -->
+    <section id="diferenciais" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-brand-400 text-sm font-bold tracking-wider uppercase mb-2 block">Diferenciais Estratégicos</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Por que grandes empresários mudam para a Ápice?</h2>
+                    <p class="text-slate-400 text-lg mb-6">Nós não apenas calculamos guias de impostos. Nós analisamos a estrutura societária da sua empresa de ponta a ponta para reduzir custos de forma contínua.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 flex-shrink-0">
+                                <i class="ph-bold ph-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Planejamento societário sob medida</h4>
+                                <p class="text-slate-400 text-sm">Estruturação de holdings ou transições de regimes tributários planejadas passo a passo.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-400 flex-shrink-0">
+                                <i class="ph-bold ph-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Relatórios mensais de inteligência</h4>
+                                <p class="text-slate-400 text-sm">Indicadores financeiros claros entregues diretamente para a diretoria, sem termos técnicos complicados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 text-center">
+                        <div class="text-4xl font-extrabold text-white mb-2">+50M</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wide">Em impostos recuperados para nossos clientes</div>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 text-center">
+                        <div class="text-4xl font-extrabold text-brand-500 mb-2">100%</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wide">Dos processos validados e homologados legalmente</div>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 text-center">
+                        <div class="text-4xl font-extrabold text-brand-500 mb-2">-35%</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wide">Redução média real da carga tributária anual</div>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-white/5 text-center">
+                        <div class="text-4xl font-extrabold text-white mb-2">+300</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wide">Empresas blindadas fiscalmente</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step by Step (Process Section) -->
+    <section id="auditoria" class="py-24 bg-slate-900/40 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Como funciona a nossa Auditoria Zero Risco?</h2>
+                <p class="text-slate-400">Uma esteira simples e transparente para regularizar e otimizar sua empresa sem gastar o seu tempo de gestão.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl font-extrabold text-slate-800 mb-4">01</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Coleta Segura</h3>
+                    <p class="text-slate-400 text-sm">Você fornece acesso temporário e seguro aos dados fiscais dos últimos anos através de certificado digital.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl font-extrabold text-brand-500/30 mb-4">02</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Cruzamento de Dados</h3>
+                    <p class="text-slate-400 text-sm">Nossos sistemas cruzam suas informações com as regras vigentes e decisões jurídicas recentes favoráveis aos contribuintes.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl font-extrabold text-slate-800 mb-4">03</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Apresentação</h3>
+                    <p class="text-slate-400 text-sm">Entregamos um relatório detalhado provando quanto dinheiro foi pago a mais e como faremos para trazê-lo de volta.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl font-extrabold text-brand-500/30 mb-4">04</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Monetização</h3>
+                    <p class="text-slate-400 text-sm">Aprovado por você, protocolamos o pedido de restituição ou iniciamos a compensação direta nos próximos impostos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Footer -->
+    <footer class="pt-24 pb-12 border-t border-white/5 text-center" id="contato">
+        <div class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Pare de queimar o lucro operacional do seu negócio.</h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">Agende uma reunião estratégica rápida de 15 minutos com um de nossos contadores tributaristas e descubra o real potencial de economia da sua empresa.</p>
+            
+            <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20tribut%C3%A1rio%20para%20minha%20empresa." target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white px-8 py-4 rounded-full text-xl font-bold transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-white">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                </svg>
+                Falar com Especialista Fiscal
+            </a>
+        </div>
+        <div class="mt-24 text-slate-600 text-sm">
+            <p>&copy; 2026 Ápice Contabilidade Estratégica. Todos os direitos reservados. Termos de Conformidade Fiscal da RFB aplicados.</p>
+        </div>
+    </footer>
+
+     <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5544900000000?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20protocolos%20de%20est%C3%A9tica." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform hover:bg-green-400">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-current text-white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.855.001-2.633-1.022-5.101-2.885-6.964a9.782 9.782 0 0 0-6.963-2.876c-5.43 0-9.855 4.42-9.858 9.855-.001 1.741.454 3.445 1.317 4.938l-.985 3.593 3.696-.969zm10.707-7.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
